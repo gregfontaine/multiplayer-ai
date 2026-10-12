@@ -83,10 +83,10 @@
           }
         },
         "ai": {
-          "result": "incident",
+          "result": "minor",
           "comment": {
-            "en": "The AI's survey looked impressive, but it cited a paper that does not exist and misreported a benchmark score. The team spent two days trying to reproduce a result that was never published.",
-            "ja": "AIのサーベイは一見見事だったが、存在しない論文を引用し、ベンチマークのスコアも誤って記載していた。チームは、どこにも発表されていない結果の再現に2日を費やした。"
+            "en": "The AI's survey was broad and well organized, but one cited paper did not exist — and nobody checked the sources. The team lost two days trying to reproduce a result that was never published.",
+            "ja": "AIのサーベイは網羅的でよく整理されていたが、引用論文の1本が実在せず、誰も出典を確認していなかった。チームは、どこにも発表されていない結果の再現に2日を費やした。"
           }
         }
       }
@@ -108,10 +108,10 @@
           }
         },
         "human_ai": {
-          "result": "done",
+          "result": "minor",
           "comment": {
-            "en": "The team labeled, and the AI flagged inconsistent labels for a second look. High quality, but only 15,000 images were finished.",
-            "ja": "チームがラベル付けし、AIが矛盾するラベルを検出して再確認を促した。品質は高いが、完了したのは15,000枚。"
+            "en": "The team labeled by hand and the AI flagged inconsistent labels. Quality was high, but only 15,000 of the 50,000 images were done, and model training slipped by two weeks.",
+            "ja": "チームが手作業でラベルを付け、AIが矛盾するラベルを検出して再確認を促した。品質は高かったが、5万枚のうち終わったのは15,000枚だけで、モデルの学習開始が2週間遅れた。"
           }
         },
         "ai_human": {
@@ -202,8 +202,8 @@
         "ai": {
           "result": "minor",
           "comment": {
-            "en": "The AI's version was 3.2× faster — but it reduced numerical precision, which created banding in dark gradients. It was caught during the client demo rehearsal, just in time.",
-            "ja": "AI版は3.2倍高速だったが、演算精度を落としていたため、暗部のグラデーションにバンディング（縞模様）が発生。顧客デモのリハーサルで、ぎりぎり気づいた。"
+            "en": "A coding agent iterated alone against the speed benchmark and reached 3.2×. But the only quality check was an average score, so it lowered numerical precision and banding appeared in dark gradients. Caught at the client demo rehearsal, just in time. The agent optimized exactly what was measured — nothing more.",
+            "ja": "コーディングエージェントが速度ベンチマークを相手に単独で改良を重ね、3.2倍を達成。しかし画質のチェックは平均スコアだけだったため、演算精度が落とされ、暗部のグラデーションにバンディング（縞模様）が発生。顧客デモのリハーサルで、ぎりぎり気づいた。エージェントは、測定された指標をそのとおり最適化しただけだった。"
           }
         }
       }
@@ -264,10 +264,10 @@
           }
         },
         "human_ai": {
-          "result": "done",
+          "result": "minor",
           "comment": {
-            "en": "The team ran the benchmark and the AI reviewed the result tables for anomalies. Reliable, but it took an hour of Yuki's day, every day.",
-            "ja": "チームがベンチマークを実行し、AIが結果表に異常がないかチェック。確実だが、中村さんの時間が毎日1時間取られた。"
+            "en": "The team ran the benchmark by hand and the AI checked the result tables. It cost Yuki an hour every day — so on two busy days it was skipped, and a regression slipped through.",
+            "ja": "チームが手作業でベンチマークを実行し、AIが結果表をチェック。中村さんの時間が毎日1時間取られたため、忙しかった2日間は実行が見送られ、デグレを見逃した。"
           }
         },
         "ai_human": {

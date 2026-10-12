@@ -225,10 +225,10 @@
           }
         },
         "human_ai": {
-          "result": "done",
+          "result": "minor",
           "comment": {
-            "en": "The team wrote answers and the AI checked them against policy. Accurate, but still slow.",
-            "ja": "チームが回答を書き、AIが規定と照合。正確だが、対応はまだ遅い。"
+            "en": "The team wrote every answer and the AI checked them against policy. Accurate, but replies still took 3 days and the pile of unanswered questions kept growing.",
+            "ja": "チームが1件ずつ回答を書き、AIが規定と照合。正確ではあるが、返信には相変わらず3日かかり、未対応の質問は増え続けた。"
           }
         },
         "ai_human": {
@@ -241,8 +241,8 @@
         "ai": {
           "result": "perfect",
           "comment": {
-            "en": "An AI assistant based on the official policy documents answered instantly, and handed anything sensitive or unclear over to a person. Employees loved it, and the team got its time back.",
-            "ja": "公式の規定文書をもとにしたAIアシスタントが即座に回答し、デリケートな内容や判断の難しい質問は担当者に引き継いだ。従業員に好評で、チームは時間を取り戻せた。"
+            "en": "An AI assistant based on the official policy documents answered instantly, and handed anything sensitive or unclear over to a person. Employees loved it, and the team got its time back. In this case, a well-designed escalation has made 'AI alone' a very safe approach.",
+            "ja": "公式の規定文書をもとにしたAIアシスタントが即座に回答し、デリケートな内容や判断の難しい質問は担当者に引き継いだ。従業員に好評で、チームは時間を取り戻せた。今回は、よく設計されたエスカレーションの仕組みのおかげで、「AIだけで」がとても安全な進め方になった。"
           }
         }
       }

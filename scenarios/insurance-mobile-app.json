@@ -118,10 +118,10 @@
           }
         },
         "human_ai": {
-          "result": "done",
+          "result": "minor",
           "comment": {
-            "en": "The team wrote the tests and the AI reviewed them, suggesting a dozen edge cases they had missed (leap-year birthdays, zero-yen discounts). Solid, but still slow: 65% coverage.",
-            "ja": "チームがテストを書き、AIがレビュー。うるう日生まれや割引額0円など、見落としていたエッジケースを十数個指摘した。堅実だが時間がかかり、カバレッジは65%。"
+            "en": "The team wrote the tests and asked the AI to review them. It suggested a few edge cases and called the suite 'comprehensive'. Reassured, the team stopped at 65% coverage — and a week later, the untested discount rule broke in production.",
+            "ja": "チームがテストを書き、AIにレビューを依頼。AIはエッジケースをいくつか指摘したうえで、テストは「網羅的」だと評価した。安心したチームはカバレッジ65%で手を止めたが、1週間後、テストのなかった割引ルールが本番環境で不具合を起こした。"
           }
         },
         "ai_human": {
@@ -281,17 +281,17 @@
           }
         },
         "ai_human": {
-          "result": "perfect",
+          "result": "done",
           "comment": {
-            "en": "The AI produced notes from the recordings in minutes; Priya skimmed them and fixed one owner name. Fast and accurate.",
-            "ja": "AIが録画から数分で議事録を作成し、プリヤさんがざっと確認して担当者名を1か所修正。速くて正確。"
+            "en": "The AI produced notes from the recordings in minutes; Priya then checked every line before sharing them. Accurate — but spending an hour approving low-risk notes that anyone could correct later was not necessary.",
+            "ja": "AIが録画から数分で議事録を作成し、プリヤさんが共有前に1行ずつ確認。正確だが、あとから誰でも直せる低リスクの議事録の承認に、1時間かける必要はなかった。"
           }
         },
         "ai": {
-          "result": "done",
+          "result": "perfect",
           "comment": {
-            "en": "The AI's notes were good and shared instantly. One action item went to the wrong person, but it was noticed at the next stand-up. Low risk, low effort.",
-            "ja": "AIの議事録は質が高く、すぐに共有された。アクションアイテムの担当者が1件間違っていたが、翌日の朝会で気づいた。リスクも手間も小さい。"
+            "en": "The AI's notes were shared right after each meeting. One action item went to the wrong person; they pointed it out in the channel and it was fixed in seconds. Low risk and easy to correct: no need for a human checkpoint.",
+            "ja": "AIの議事録は各会議の直後に共有された。アクションアイテムの担当者が1件違っていたが、本人がチャンネルで指摘し、すぐに修正された。リスクが低く簡単に直せる仕事なら、人のチェックを挟む必要はない。"
           }
         }
       }
