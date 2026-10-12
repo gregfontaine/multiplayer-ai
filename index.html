@@ -5,15 +5,34 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Human × AI Sprint</title>
   <meta name="description" content="A mini-game to learn how teams can collaborate with AI: what to delegate, and how much to stay in the loop.">
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🤝</text></svg>">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%230f141a'/><text x='50' y='71' font-family='Arial' font-weight='700' font-size='62' text-anchor='middle' fill='%23ff771a'>A</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Sans+JP:wght@400;500;700&display=swap">
+  <script>
+    // Apply the saved light/dark choice before first paint.
+    try { const t = localStorage.getItem('theme'); if (t === 'light' || t === 'dark') document.documentElement.dataset.theme = t; } catch {}
+  </script>
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
   <header class="topbar">
-    <a href="#/" class="brand" id="brand">🤝 <span id="brand-title">Human × AI Sprint</span></a>
-    <div class="lang" role="group" aria-label="Language">
-      <button type="button" data-lang="en">EN</button>
-      <button type="button" data-lang="ja">日本語</button>
+    <div class="container topbar-inner">
+      <div class="brand-group">
+        <a class="wordmark" href="https://agorax.jp" target="_blank" rel="noopener">AGORAX</a>
+        <span class="brand-sep" aria-hidden="true"></span>
+        <a href="#/" class="app-link active" id="brand-title">Human × AI Sprint</a>
+      </div>
+      <div class="header-tools">
+        <div class="lang" role="group" aria-label="Language">
+          <button type="button" data-lang="ja">JP</button>
+          <button type="button" data-lang="en">EN</button>
+        </div>
+        <button type="button" class="theme-toggle" id="theme-toggle" aria-label="Toggle light/dark theme">
+          <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg>
+          <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></svg>
+        </button>
+      </div>
     </div>
   </header>
   <main id="app" class="container" aria-live="polite"></main>

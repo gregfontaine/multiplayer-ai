@@ -2,7 +2,7 @@
   "id": "my-team",
   "icon": "🚀",
   "title": { "en": "Team name", "ja": "チーム名" },
-  "description": { "en": "One or two sentences about the team and what matters in its work.", "ja": "チームの説明と、仕事で大切なこと。" },
+  "description": { "en": "One or two sentences about the team and what matters in its work.", "ja": "チームの説明と、仕事で大切にしていること。" },
   "members": [
     {
       "id": "member1",

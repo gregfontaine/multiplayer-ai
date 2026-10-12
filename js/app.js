@@ -116,7 +116,7 @@ function render() {
   document.documentElement.lang = state.lang;
   document.title = state.scenario ? `${tx(state.scenario.title)} — ${ui('appTitle')}` : ui('appTitle');
   document.getElementById('brand-title').textContent = ui('appTitle');
-  document.getElementById('footer').textContent = ui('footer');
+  document.getElementById('footer').innerHTML = `${esc(ui('footer'))} · <a href="https://agorax.jp" target="_blank" rel="noopener">Agorax</a>`;
   document.querySelectorAll('[data-lang]').forEach(b => b.setAttribute('aria-pressed', String(b.dataset.lang === state.lang)));
 
   if (!state.scenario) {
@@ -149,7 +149,7 @@ function homeView() {
 
   return `
     <section class="hero">
-      <h1>${esc(ui('appTitle'))}</h1>
+      <h1>${esc(ui('appTitle')).replace('AI', '<span class="hl">AI</span>')}</h1>
       <p>${esc(ui('tagline'))}</p>
     </section>
     <section class="intro">
@@ -362,6 +362,13 @@ function playSprintAnimation() {
 // ---------- events ----------
 
 document.querySelectorAll('[data-lang]').forEach(b => b.addEventListener('click', () => setLang(b.dataset.lang)));
+
+document.getElementById('theme-toggle').addEventListener('click', () => {
+  const root = document.documentElement;
+  const dark = root.dataset.theme ? root.dataset.theme === 'dark' : window.matchMedia('(prefers-color-scheme: dark)').matches;
+  root.dataset.theme = dark ? 'light' : 'dark';
+  try { localStorage.setItem('theme', root.dataset.theme); } catch { /* ignore */ }
+});
 
 app.addEventListener('click', e => {
   const action = e.target.closest('[data-action]')?.dataset.action;

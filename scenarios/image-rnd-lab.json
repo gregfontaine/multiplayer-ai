@@ -7,7 +7,7 @@
   },
   "description": {
     "en": "Researchers building state-of-the-art low-light denoising for camera makers — where originality and scientific rigor are everything.",
-    "ja": "カメラメーカー向けに最先端の低照度ノイズ除去技術を開発する研究チーム。独自性と科学的な厳密さがすべて。"
+    "ja": "カメラメーカー向けに最先端の低照度ノイズ除去技術を開発する研究チーム。独創性と科学的な厳密さが何より問われる。"
   },
   "members": [
     {
@@ -17,7 +17,7 @@
       "role": { "en": "Product Owner & research lead", "ja": "プロダクトオーナー兼研究リーダー" },
       "strengths": {
         "en": ["Deep domain expertise", "Trusted by client camera makers"],
-        "ja": ["深い専門知識", "顧客カメラメーカーからの信頼"]
+        "ja": ["分野への深い専門知識", "取引先カメラメーカーからの厚い信頼"]
       }
     },
     {
@@ -47,7 +47,7 @@
       "role": { "en": "Data engineer", "ja": "データエンジニア" },
       "strengths": {
         "en": ["Dataset pipelines", "Data licensing know-how"],
-        "ja": ["データセット構築パイプライン", "データライセンスの知識"]
+        "ja": ["データセットのパイプライン構築", "データライセンスに詳しい"]
       }
     }
   ],
@@ -65,28 +65,28 @@
           "result": "minor",
           "comment": {
             "en": "Lucas read 8 papers in depth, but missed a major paper from a rival lab published last month. The team almost started duplicating that work.",
-            "ja": "ルカが8本の論文を精読したが、先月ライバル研究室が発表した重要論文を見落とした。危うく同じ研究を重複して始めるところだった。"
+            "ja": "ルカさんが8本の論文を精読したが、先月ライバル研究室が発表した重要論文を見落とした。危うく同じ研究に着手するところだった。"
           }
         },
         "human_ai": {
           "result": "done",
           "comment": {
             "en": "Lucas read the papers he chose; the AI reviewed his summary and pointed to three related papers he had missed, including the rival lab's. Good, but narrow.",
-            "ja": "ルカが選んだ論文を読み、AIがそのまとめをレビュー。ライバル研究室の論文を含む、見落としていた関連論文3本を指摘してくれた。良い結果だが範囲は限定的。"
+            "ja": "ルカさんが自分で選んだ論文を読み、AIがその要約をレビュー。ライバル研究室の論文を含め、見落としていた関連論文を3本指摘した。良い結果だが、範囲は限られる。"
           }
         },
         "ai_human": {
           "result": "perfect",
           "comment": {
             "en": "The AI scanned and summarized 60 papers. Lucas checked the key claims against the original PDFs and removed one citation the AI had invented. Broad, fast and reliable.",
-            "ja": "AIが60本の論文を調べて要約。ルカが主要な主張を原文PDFと照合し、AIが捏造した引用を1件削除した。網羅的で速く、信頼できる結果。"
+            "ja": "AIが60本の論文を調査・要約。ルカさんが主要な主張を原論文のPDFと照合し、AIが捏造した引用を1件削除した。網羅的で速く、信頼できる結果。"
           }
         },
         "ai": {
           "result": "incident",
           "comment": {
             "en": "The AI's survey looked impressive, but it cited a paper that does not exist and misreported a benchmark score. The team spent two days trying to reproduce a result that was never published.",
-            "ja": "AIのサーベイは見栄えが良かったが、存在しない論文を引用し、ベンチマークのスコアも誤っていた。チームは発表されてもいない結果の再現に2日を費やした。"
+            "ja": "AIのサーベイは一見見事だったが、存在しない論文を引用し、ベンチマークのスコアも誤って記載していた。チームは、どこにも発表されていない結果の再現に2日を費やした。"
           }
         }
       }
@@ -104,28 +104,28 @@
           "result": "minor",
           "comment": {
             "en": "Sofia and Yuki labeled only 8,000 images. Fatigue set in, and spot checks found 7% labeling errors.",
-            "ja": "ソフィアと優希がラベル付けできたのは8,000枚のみ。疲労が出て、抜き取り検査では7%のラベル誤りが見つかった。"
+            "ja": "ソフィアさんと中村さんがラベル付けできたのは8,000枚のみ。疲れも出て、抜き取り検査では7%のラベル誤りが見つかった。"
           }
         },
         "human_ai": {
           "result": "done",
           "comment": {
             "en": "The team labeled, and the AI flagged inconsistent labels for a second look. High quality, but only 15,000 images were finished.",
-            "ja": "チームがラベル付けし、AIが不整合なラベルを再確認用にフラグ付け。品質は高いが、完了したのは15,000枚。"
+            "ja": "チームがラベル付けし、AIが矛盾するラベルを検出して再確認を促した。品質は高いが、完了したのは15,000枚。"
           }
         },
         "ai_human": {
           "result": "perfect",
           "comment": {
             "en": "The AI pre-labeled all 50,000 images. Sofia reviewed a random sample and every low-confidence case, and caught that the AI was reading night-sky scenes as 'heavy noise'. Fixed, complete and clean.",
-            "ja": "AIが5万枚すべてを事前にラベル付け。ソフィアがランダムサンプルと確信度の低いケースをすべて確認し、AIが夜空のシーンを「高ノイズ」と誤判定していることに気づいて修正。完全でクリーンなデータセットになった。"
+            "ja": "AIが5万枚すべてに仮ラベルを付与。ソフィアさんがランダムサンプルと確信度の低いケースをすべて確認し、AIが夜空のシーンを「高ノイズ」と誤判定していることに気づいて修正。漏れのないクリーンなデータセットが完成。"
           }
         },
         "ai": {
           "result": "minor",
           "comment": {
             "en": "The AI labeled everything in a day — but systematically tagged stars in the night sky as noise. The next model learned to erase stars, and the team lost a week finding out why.",
-            "ja": "AIが1日で全画像をラベル付けしたが、夜空の星を体系的に「ノイズ」と判定していた。次のモデルが星を消すように学習してしまい、原因究明に1週間を失った。"
+            "ja": "AIが1日で全画像をラベル付けしたが、夜空の星を一貫して「ノイズ」と判定していた。その結果、次のモデルは星を消すように学習してしまい、原因の究明に1週間を費やした。"
           }
         }
       }
@@ -133,38 +133,38 @@
     {
       "id": "architecture",
       "owner": "haruka",
-      "title": { "en": "Design the new model architecture", "ja": "新しいモデルアーキテクチャを設計" },
+      "title": { "en": "Design the new model architecture", "ja": "新しいモデルアーキテクチャの設計" },
       "description": {
         "en": "The core innovation that should beat competitors — and could become a patent.",
-        "ja": "競合を上回るための中核となるイノベーション。特許になる可能性もある。"
+        "ja": "競合を上回るための中核技術。特許につながる可能性もある。"
       },
       "outcomes": {
         "human": {
           "result": "done",
           "comment": {
             "en": "Haruka and Lucas sketched an original idea on the whiteboard. It is promising and truly theirs, though they had no time to stress-test it.",
-            "ja": "春香とルカがホワイトボードで独自のアイデアを練り上げた。有望で、まさにチーム独自の発想。ただし十分に検証する時間はなかった。"
+            "ja": "石井さんとルカさんがホワイトボードで独自のアイデアを練り上げた。有望で、まさにチーム自身の発想。ただし、厳しく検証する時間はなかった。"
           }
         },
         "human_ai": {
           "result": "perfect",
           "comment": {
             "en": "The team designed the architecture, then asked the AI to attack it: weaknesses, missing experiments, similar prior work. Two weak points were fixed. The idea stays original — and is now much stronger.",
-            "ja": "チームが設計したアーキテクチャをAIに攻撃させた：弱点、不足している実験、類似の先行研究。2つの弱点を修正し、独自性を保ったまま格段に強いアイデアになった。"
+            "ja": "チームが設計したアーキテクチャを、AIにあえて批判させた。弱点、足りない実験、類似の先行研究を洗い出して2つの弱点を修正。独自性を保ったまま、格段に強いアイデアになった。"
           }
         },
         "ai_human": {
           "result": "minor",
           "comment": {
             "en": "The AI proposed a clean, plausible design and the team approved it — then realized it was essentially a well-known architecture from 2024. Nothing wrong, but nothing new either, and the team felt little ownership.",
-            "ja": "AIが整った、もっともらしい設計を提案し、チームは承認。後になって、それが2024年の有名なアーキテクチャとほぼ同じだと気づいた。間違いではないが新しさもなく、チームの当事者意識も薄かった。"
+            "ja": "AIが整った、もっともらしい設計を提案し、チームは承認。後になって、2024年に発表された有名なアーキテクチャとほぼ同じだと気づいた。誤りはないが新しさもなく、チームの当事者意識も薄かった。"
           }
         },
         "ai": {
           "result": "incident",
           "comment": {
             "en": "The AI's design was adopted as-is. Two weeks later, the IP team found it closely matched a competitor's patented method. Work was halted pending legal review.",
-            "ja": "AIの設計がそのまま採用された。2週間後、知財部門が競合他社の特許技術と酷似していることを発見。法務確認が終わるまで開発が停止した。"
+            "ja": "AIの設計がそのまま採用された。2週間後、知財部が競合他社の特許技術と酷似していることを発見。法務の確認が終わるまで、開発は停止に。"
           }
         }
       }
@@ -172,7 +172,7 @@
     {
       "id": "gpu-speed",
       "owner": "yuki",
-      "title": { "en": "Speed up processing on the GPU", "ja": "GPU上の処理速度を上げる" },
+      "title": { "en": "Speed up processing on the GPU", "ja": "GPU処理の高速化" },
       "description": {
         "en": "The client needs real-time processing of 4K video.",
         "ja": "顧客は4K映像のリアルタイム処理を求めている。"
@@ -182,28 +182,28 @@
           "result": "done",
           "comment": {
             "en": "Yuki hand-tuned the code and got a 1.5× speed-up. Solid work, but still short of real-time 4K.",
-            "ja": "優希が手作業でコードを調整し、1.5倍の高速化を達成。堅実だが、4Kリアルタイムにはまだ届かない。"
+            "ja": "中村さんが手作業でコードをチューニングし、1.5倍の高速化を達成。堅実な成果だが、4Kのリアルタイム処理にはまだ届かない。"
           }
         },
         "human_ai": {
           "result": "done",
           "comment": {
             "en": "Yuki optimized the code; the AI reviewed it and found a memory-access pattern that was slowing things down. 1.8× faster — good, but not yet real-time.",
-            "ja": "優希が最適化し、AIがコードをレビューして処理を遅くしていたメモリアクセスのパターンを発見。1.8倍の高速化。良いが、まだリアルタイムには届かない。"
+            "ja": "中村さんが最適化し、AIがコードをレビューして、処理を遅くしていたメモリアクセスパターンを発見。1.8倍に高速化。良い結果だが、まだリアルタイムには届かない。"
           }
         },
         "ai_human": {
           "result": "perfect",
           "comment": {
             "en": "The AI generated five optimized versions. Yuki benchmarked them all, rejected one that produced subtle visual artifacts, and kept the best: 3× faster, real-time 4K achieved.",
-            "ja": "AIが5種類の最適化版を生成。優希がすべてをベンチマークし、微妙な画質の乱れが出る1つを除外して最良のものを採用。3倍高速化し、4Kリアルタイムを達成。"
+            "ja": "AIが最適化版を5種類生成。中村さんがすべてをベンチマークし、わずかなアーティファクトが出る1つを除外して最良のものを採用。3倍に高速化し、4Kのリアルタイム処理を達成。"
           }
         },
         "ai": {
           "result": "minor",
           "comment": {
             "en": "The AI's version was 3.2× faster — but it reduced numerical precision, which created banding in dark gradients. It was caught during the client demo rehearsal, just in time.",
-            "ja": "AIの版は3.2倍高速だったが、計算精度を落としていたため暗部のグラデーションに縞模様が発生。顧客デモのリハーサルでぎりぎり気づいた。"
+            "ja": "AI版は3.2倍高速だったが、演算精度を落としていたため、暗部のグラデーションにバンディング（縞模様）が発生。顧客デモのリハーサルで、ぎりぎり気づいた。"
           }
         }
       }
@@ -211,38 +211,38 @@
     {
       "id": "client-report",
       "owner": "haruka",
-      "title": { "en": "Write the progress report for the client", "ja": "顧客向け進捗レポートを書く" },
+      "title": { "en": "Write the progress report for the client", "ja": "顧客向け進捗レポートの作成" },
       "description": {
         "en": "A camera maker funds this project and expects honest, precise results.",
-        "ja": "プロジェクトに出資しているカメラメーカーは、正直で正確な報告を期待している。"
+        "ja": "このプロジェクトに出資するカメラメーカーは、誠実で正確な報告を求めている。"
       },
       "outcomes": {
         "human": {
           "result": "done",
           "comment": {
             "en": "Haruka wrote a precise, honest report. It took two evenings, but the client appreciated the clarity.",
-            "ja": "春香が正確で誠実なレポートを作成。2晩かかったが、顧客はその明快さを高く評価した。"
+            "ja": "石井さんが正確で誠実なレポートを作成。2晩かかったが、顧客はその分かりやすさを高く評価した。"
           }
         },
         "human_ai": {
           "result": "perfect",
           "comment": {
             "en": "Haruka wrote the key findings; the AI polished the English and suggested clearer charts. Honest, readable, and done in half a day.",
-            "ja": "春香が主要な結果を書き、AIが英語を磨き、より分かりやすいグラフを提案。誠実で読みやすく、半日で完成。"
+            "ja": "石井さんが主要な結果を書き、AIが英文を推敲して、より分かりやすいグラフを提案。誠実で読みやすく、半日で完成。"
           }
         },
         "ai_human": {
           "result": "minor",
           "comment": {
             "en": "The AI's draft claimed 'real-time on all devices'. Haruka toned it down during approval, but missed one exaggerated number that the client later questioned.",
-            "ja": "AIの下書きには「全デバイスでリアルタイム動作」と書かれていた。春香は承認時に表現を修正したが、誇張された数値を1つ見逃し、後で顧客から質問された。"
+            "ja": "AIの下書きには「全デバイスでリアルタイム動作」と書かれていた。石井さんは承認時に表現を控えめに直したが、誇張された数値を1つ見逃し、後で顧客から指摘を受けた。"
           }
         },
         "ai": {
           "result": "incident",
           "comment": {
             "en": "The AI wrote and sent the report. It overstated performance and included benchmark results from another client's confidential dataset. Haruka had to call both clients to apologize.",
-            "ja": "AIがレポートを作成・送信。性能を誇張したうえ、別の顧客の機密データセットでのベンチマーク結果まで含めていた。春香は両方の顧客に謝罪の電話をすることになった。"
+            "ja": "AIがレポートを作成し、送信まで実施。性能を誇張したうえ、別の顧客の機密データセットで取ったベンチマーク結果まで載せていた。石井さんは両社に電話で謝罪する羽目になった。"
           }
         }
       }
@@ -250,38 +250,38 @@
     {
       "id": "nightly-benchmark",
       "owner": "yuki",
-      "title": { "en": "Run the nightly quality benchmark", "ja": "毎晩の品質ベンチマークを実行" },
+      "title": { "en": "Run the nightly quality benchmark", "ja": "品質ベンチマークの夜間実行" },
       "description": {
         "en": "Run 200 test images through each new model version and compare quality scores.",
-        "ja": "新しいモデルのバージョンごとに200枚のテスト画像を処理し、品質スコアを比較する。"
+        "ja": "モデルの新バージョンごとにテスト画像200枚を処理し、品質スコアを比較する。"
       },
       "outcomes": {
         "human": {
           "result": "minor",
           "comment": {
             "en": "Running the benchmark by hand was skipped twice on busy days. A drop in quality went unnoticed for three days.",
-            "ja": "手作業のベンチマークは忙しい日に2回スキップされ、品質の低下が3日間見逃された。"
+            "ja": "手作業のベンチマークは忙しい日に2回スキップされ、品質の低下に3日間気づかなかった。"
           }
         },
         "human_ai": {
           "result": "done",
           "comment": {
             "en": "The team ran the benchmark and the AI reviewed the result tables for anomalies. Reliable, but it took an hour of Yuki's day, every day.",
-            "ja": "チームがベンチマークを実行し、AIが結果表の異常をチェック。確実だが、優希の時間を毎日1時間奪った。"
+            "ja": "チームがベンチマークを実行し、AIが結果表に異常がないかチェック。確実だが、中村さんの時間が毎日1時間取られた。"
           }
         },
         "ai_human": {
           "result": "done",
           "comment": {
             "en": "The AI ran everything automatically and Yuki approved each nightly report. Reliable, though approving routine 'all green' reports felt like wasted time.",
-            "ja": "AIがすべて自動で実行し、優希が毎晩のレポートを承認。確実だが、「問題なし」の定型レポートを承認するのは時間の無駄に感じられた。"
+            "ja": "AIがすべて自動で実行し、中村さんが毎晩のレポートを承認。確実だが、「異常なし」ばかりの定型レポートの承認は時間の無駄に感じられた。"
           }
         },
         "ai": {
           "result": "perfect",
           "comment": {
             "en": "The AI ran the benchmark every night, compared scores, and only alerted the team when quality dropped. It caught a regression within hours. Repetitive, well-defined and easy to verify: a perfect job for AI.",
-            "ja": "AIが毎晩ベンチマークを実行してスコアを比較し、品質が下がったときだけチームに通知。数時間以内に品質低下を検知した。反復的で、明確に定義され、検証しやすい — AIに最適な仕事。"
+            "ja": "AIが毎晩ベンチマークを実行してスコアを比較し、品質が下がったときだけチームに通知。デグレを数時間以内に検知した。反復的で、手順が明確で、検証しやすい。まさにAI向きの仕事。"
           }
         }
       }

@@ -81,9 +81,9 @@ Everything about a team is in its file in `scenarios/`. Each piece of visible te
 
 | Result | Label (EN / JA) | Points |
 |---|---|---|
-| `perfect` | Perfect! / パーフェクト！ | 3 |
+| `perfect` | Perfect! / 大成功！ | 3 |
 | `done` | Done / 無事完了 | 2 |
-| `minor` | Minor issue / 軽微な問題 | 1 |
+| `minor` | Minor issue / 小さな問題あり | 1 |
 | `incident` | Incident / インシデント | 0 |
 
 Labels, points and the four ways of working are defined in `js/config.js`.
