@@ -152,29 +152,29 @@
         "human": {
           "result": "done",
           "comment": {
-            "en": "Kenji and Priya built it carefully, stripping location metadata and encrypting storage. It took the whole sprint, but it is secure.",
-            "ja": "森さんとプリヤさんが慎重に実装し、位置情報の削除や保存データの暗号化まで対応。スプリントをまるごと使ったが、安全な仕上がり。"
+            "en": "Kenji and Priya built it carefully, stripping location metadata and encrypting storage. Secure — but writing every line by hand took the whole sprint.",
+            "ja": "森さんとプリヤさんが慎重に実装し、位置情報の削除や保存データの暗号化まで対応。安全な仕上がりだが、すべて手で書いたためスプリントをまるごと使った。"
           }
         },
         "human_ai": {
-          "result": "perfect",
+          "result": "done",
           "comment": {
-            "en": "The team wrote the code; the AI review caught a missing permission check that would have let one user see another user's photos. Fixed in minutes. Secure and on time.",
-            "ja": "チームが書いたコードをAIがレビューし、他人の写真が見えてしまう権限チェック漏れを発見。数分で修正でき、安全かつ予定どおりに完成。"
+            "en": "The team wrote the code by hand and the AI reviewed it, catching a missing permission check that would have let one user see another user's photos. Secure, but slow: the team spent the week typing what a coding agent could have written in hours.",
+            "ja": "チームが手でコードを書き、AIがレビュー。他人の写真が見えてしまう権限チェック漏れを発見できた。安全だが時間がかかり、コーディングエージェントなら数時間で書ける部分に1週間を費やした。"
           }
         },
         "ai_human": {
-          "result": "minor",
+          "result": "perfect",
           "comment": {
-            "en": "The AI produced working code fast. In review, Kenji noticed it kept GPS location data in the photos and used a deprecated library. Fixing it took two extra days.",
-            "ja": "AIが動くコードを短時間で作成。しかしレビューで森さんが、写真にGPS位置情報が残っていることと、非推奨のライブラリが使われていることに気づいた。修正に2日余分にかかった。"
+            "en": "Kenji wrote a short spec with the privacy rules: strip GPS data, encrypt at rest, users only see their own photos. The coding agent built it with tests, ran the security scans and iterated until CI was green. Kenji reviewed the diff, focusing on access control, and asked for one change. Done in two days; the rest of the sprint went into UX polish with Mei.",
+            "ja": "森さんが、GPS情報の削除・保存時の暗号化・本人以外は閲覧不可といったプライバシー要件を短い仕様書にまとめた。コーディングエージェントがテスト付きで実装し、セキュリティスキャンを回してCIが通るまで修正。森さんはアクセス制御を中心に差分をレビューし、1点だけ修正を依頼した。2日で完成し、残りのスプリントはリンさんとのUX改善に充てた。"
           }
         },
         "ai": {
           "result": "incident",
           "comment": {
-            "en": "The AI-built feature shipped without human review. Photos were stored with customers' home locations embedded, and without encryption. Security found it a week later; the team had to report it to Compliance.",
-            "ja": "AIが作った機能が、人のレビューなしでリリースされた。写真はお客様の自宅の位置情報を含んだまま、暗号化もされずに保存されていた。1週間後にセキュリティ部門が発見し、コンプライアンス部門への報告が必要に。"
+            "en": "A coding agent built and shipped the feature on its own. All its tests passed — but nobody had specified that photo location data is personal data, so it was stored as-is. Security found customers' home locations a week later; the team had to report it to Compliance. Tests can only check the requirements someone wrote down.",
+            "ja": "コーディングエージェントが単独で実装からリリースまで実施。テストはすべて通ったが、写真の位置情報が個人情報にあたることを誰も要件にしていなかったため、そのまま保存されていた。1週間後にセキュリティ部門がお客様の自宅の位置情報を発見し、コンプライアンス部門への報告が必要に。テストで確認できるのは、誰かが書き出した要件だけ。"
           }
         }
       }
