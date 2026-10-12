@@ -1,0 +1,300 @@
+{
+  "id": "insurance-mobile-app",
+  "icon": "📱",
+  "title": {
+    "en": "Insurance Mobile App Squad",
+    "ja": "保険会社のモバイルアプリ開発チーム"
+  },
+  "description": {
+    "en": "A product team building the customer app of Hoshizora Insurance: policies, claims and support — where accuracy and privacy matter.",
+    "ja": "ほしぞら損保の顧客向けアプリを開発するチーム。契約管理・保険金請求・サポートを担当し、正確さとプライバシーが何より重要。"
+  },
+  "members": [
+    {
+      "id": "aiko",
+      "avatar": "👩‍💼",
+      "name": { "en": "Aiko Tanaka", "ja": "田中 愛子" },
+      "role": { "en": "Product Owner", "ja": "プロダクトオーナー" },
+      "strengths": {
+        "en": ["Knows customers and insurance regulations", "Sharp prioritization"],
+        "ja": ["顧客と保険規制に精通", "優先順位付けが的確"]
+      }
+    },
+    {
+      "id": "kenji",
+      "avatar": "👨‍💻",
+      "name": { "en": "Kenji Mori", "ja": "森 健司" },
+      "role": { "en": "Senior mobile engineer", "ja": "シニアモバイルエンジニア" },
+      "strengths": {
+        "en": ["Architecture and security", "Meticulous code reviews"],
+        "ja": ["アーキテクチャとセキュリティ", "緻密なコードレビュー"]
+      }
+    },
+    {
+      "id": "priya",
+      "avatar": "👩‍💻",
+      "name": { "en": "Priya Shah", "ja": "プリヤ・シャー" },
+      "role": { "en": "Front-end developer", "ja": "フロントエンド開発者" },
+      "strengths": {
+        "en": ["Builds UI fast", "Accessibility champion"],
+        "ja": ["UIを素早く実装", "アクセシビリティの推進役"]
+      }
+    },
+    {
+      "id": "takumi",
+      "avatar": "🕵️",
+      "name": { "en": "Takumi Sato", "ja": "佐藤 拓海" },
+      "role": { "en": "QA engineer", "ja": "QAエンジニア" },
+      "strengths": {
+        "en": ["Finds edge cases", "Test automation"],
+        "ja": ["エッジケースを見つける達人", "テスト自動化"]
+      }
+    },
+    {
+      "id": "mei",
+      "avatar": "🎨",
+      "name": { "en": "Mei Lin", "ja": "メイ・リン" },
+      "role": { "en": "UX designer", "ja": "UXデザイナー" },
+      "strengths": {
+        "en": ["User interviews", "Fast prototyping"],
+        "ja": ["ユーザーインタビュー", "高速プロトタイピング"]
+      }
+    }
+  ],
+  "tasks": [
+    {
+      "id": "reply-inquiries",
+      "owner": "aiko",
+      "title": { "en": "Reply to customer inquiries", "ja": "お客様からのお問い合わせに返信" },
+      "description": {
+        "en": "About 40 messages in the support inbox, many about the next app update.",
+        "ja": "サポート窓口に届いた約40件のメッセージ。次回アップデートに関する質問が多い。"
+      },
+      "outcomes": {
+        "human": {
+          "result": "done",
+          "comment": {
+            "en": "It took the team a little extra time, but they got the opportunity to better understand current customer sentiment, and no mistakes were made.",
+            "ja": "少し余分に時間がかかったが、お客様の今の気持ちをより深く理解する機会になった。ミスもなかった。"
+          }
+        },
+        "human_ai": {
+          "result": "perfect",
+          "comment": {
+            "en": "The team carefully read each message and got a real feel for customer sentiment. They drafted the core message of each response, and the AI took care of precise wording and typo corrections. Effective, and no mistakes were made.",
+            "ja": "チームが一通ずつ丁寧に読み、お客様の気持ちをしっかり把握した。返信の要点はチームが書き、細かな言い回しや誤字の修正はAIが担当。効率的で、ミスもなかった。"
+          }
+        },
+        "ai_human": {
+          "result": "minor",
+          "comment": {
+            "en": "Because the AI drafted all the responses, the team missed the chance to deeply understand customer sentiment. During review, they also spotted that the AI had promised a release date the team had only been discussing on Slack — it had not been approved. The error was corrected before sending.",
+            "ja": "AIにすべての返信を下書きさせたため、お客様の気持ちを深く理解する機会を逃した。また承認時のチェックで、Slackで検討中なだけで未承認のリリース日をAIが約束していたことに気づいた。送信前に修正できた。"
+          }
+        },
+        "ai": {
+          "result": "incident",
+          "comment": {
+            "en": "Because the AI wrote and sent all the responses, the team missed the chance to understand customer sentiment. Worse, in one email the AI promised a release date that had only been discussed on Slack and never approved. The team had to write back to the customer to correct it.",
+            "ja": "AIがすべての返信を作成・送信したため、お客様の気持ちを理解する機会を逃した。さらに、あるメールでAIがSlackで話していただけの未承認のリリース日を約束してしまい、チームはお客様に訂正のメールを送る羽目になった。"
+          }
+        }
+      }
+    },
+    {
+      "id": "unit-tests",
+      "owner": "takumi",
+      "title": { "en": "Write unit tests for the premium calculator", "ja": "保険料計算モジュールの単体テストを書く" },
+      "description": {
+        "en": "The pricing logic has many rules (age, region, discounts) and almost no tests.",
+        "ja": "年齢・地域・割引など多くのルールがあるのに、テストがほぼない。"
+      },
+      "outcomes": {
+        "human": {
+          "result": "minor",
+          "comment": {
+            "en": "Takumi and Kenji wrote tests by hand all week. Coverage only reached 40%, and a tired copy-paste error left one discount rule untested.",
+            "ja": "拓海と健司が一週間かけて手作業でテストを書いたが、カバレッジは40%止まり。疲れからのコピペミスで、割引ルールの一つがテストされないままになった。"
+          }
+        },
+        "human_ai": {
+          "result": "done",
+          "comment": {
+            "en": "The team wrote the tests and the AI reviewed them, suggesting a dozen edge cases they had missed (leap-year birthdays, zero-yen discounts). Solid, but still slow: 65% coverage.",
+            "ja": "チームがテストを書き、AIがレビュー。うるう年生まれや0円割引など、見落としていたエッジケースを十数個提案してくれた。堅実だが時間はかかり、カバレッジは65%。"
+          }
+        },
+        "ai_human": {
+          "result": "perfect",
+          "comment": {
+            "en": "The AI generated 300 test cases in an hour. Takumi reviewed them and found one test whose 'expected' value simply copied a rounding bug in the current code. He fixed the bug instead of locking it in. 92% coverage.",
+            "ja": "AIが1時間で300件のテストを生成。拓海がレビューし、現在のコードの端数処理バグをそのまま「期待値」にしているテストを発見。バグを固定化せずに修正できた。カバレッジ92%。"
+          }
+        },
+        "ai": {
+          "result": "minor",
+          "comment": {
+            "en": "The AI generated 300 tests and they all passed — partly because some of them treated the current (wrong) rounding behavior as correct. The bug is now 'protected' by tests and will be harder to notice.",
+            "ja": "AIが300件のテストを生成し、すべて合格。ただし一部は現在の（誤った）端数処理を正解として扱っていた。バグがテストによって「守られて」しまい、今後気づきにくくなった。"
+          }
+        }
+      }
+    },
+    {
+      "id": "photo-upload",
+      "owner": "kenji",
+      "title": { "en": "Build the claim photo upload feature", "ja": "保険金請求の写真アップロード機能を作る" },
+      "description": {
+        "en": "Customers upload photos of car damage. Photos contain personal data and location metadata.",
+        "ja": "お客様が車の損傷写真をアップロードする機能。写真には個人情報や位置情報が含まれる。"
+      },
+      "outcomes": {
+        "human": {
+          "result": "done",
+          "comment": {
+            "en": "Kenji and Priya built it carefully, stripping location metadata and encrypting storage. It took the whole sprint, but it is secure.",
+            "ja": "健司とプリヤが慎重に実装し、位置情報の削除と保存データの暗号化も完了。スプリント丸ごとかかったが、安全な仕上がり。"
+          }
+        },
+        "human_ai": {
+          "result": "perfect",
+          "comment": {
+            "en": "The team wrote the code; the AI review caught a missing permission check that would have let one user see another user's photos. Fixed in minutes. Secure and on time.",
+            "ja": "チームが書いたコードをAIがレビューし、他のユーザーの写真が見えてしまう権限チェック漏れを発見。数分で修正でき、安全かつ予定通りに完成。"
+          }
+        },
+        "ai_human": {
+          "result": "minor",
+          "comment": {
+            "en": "The AI produced working code fast. In review, Kenji noticed it kept GPS location data in the photos and used a deprecated library. Fixing it took two extra days.",
+            "ja": "AIが動くコードを素早く作成。しかしレビューで健司が、写真のGPS位置情報が残ったままであることと、非推奨ライブラリの使用に気づいた。修正に2日余計にかかった。"
+          }
+        },
+        "ai": {
+          "result": "incident",
+          "comment": {
+            "en": "The AI-built feature shipped without human review. Photos were stored with customers' home locations embedded, and without encryption. Security found it a week later; the team had to report it to Compliance.",
+            "ja": "AIが作った機能が人のレビューなしにリリースされた。写真はお客様の自宅の位置情報を含んだまま、暗号化もされずに保存されていた。1週間後にセキュリティ部門が発見し、コンプライアンス部門への報告が必要になった。"
+          }
+        }
+      }
+    },
+    {
+      "id": "translate",
+      "owner": "mei",
+      "title": { "en": "Translate the app into English", "ja": "アプリを英語に対応させる" },
+      "description": {
+        "en": "800 screen texts, including insurance and legal terms, for foreign residents.",
+        "ja": "在日外国人向けに、保険・法律用語を含む約800の画面テキストを英訳する。"
+      },
+      "outcomes": {
+        "human": {
+          "result": "minor",
+          "comment": {
+            "en": "Mei and Aiko translated by hand. They only finished 60% of the texts, and terminology was inconsistent ('deductible' vs. 'excess').",
+            "ja": "メイと愛子が手作業で翻訳したが、完了したのは60%。用語も「deductible」と「excess」が混在するなど不統一だった。"
+          }
+        },
+        "human_ai": {
+          "result": "done",
+          "comment": {
+            "en": "The team translated and the AI checked consistency and grammar. Good quality, but only 80% of the texts were finished this sprint.",
+            "ja": "チームが翻訳し、AIが用語の統一と文法をチェック。品質は良いが、今スプリントで終わったのは80%。"
+          }
+        },
+        "ai_human": {
+          "result": "perfect",
+          "comment": {
+            "en": "The AI translated everything in an hour using the company glossary. Aiko reviewed the legal and insurance terms and corrected three. Complete, consistent and accurate.",
+            "ja": "AIが社内用語集を使って1時間で全文を翻訳。愛子が法律・保険用語をレビューし、3か所を修正。完全で、統一感があり、正確な仕上がり。"
+          }
+        },
+        "ai": {
+          "result": "incident",
+          "comment": {
+            "en": "The AI translated everything instantly, but rendered 免責 (deductible) as 'exemption' on the claim screen. Several customers thought they would pay nothing; Legal had to step in.",
+            "ja": "AIが一瞬で全文を翻訳したが、請求画面の「免責」を「exemption（免除）」と訳してしまった。自己負担なしと誤解したお客様が複数出て、法務部が対応に乗り出した。"
+          }
+        }
+      }
+    },
+    {
+      "id": "roadmap",
+      "owner": "aiko",
+      "title": { "en": "Prioritize next quarter's roadmap", "ja": "来四半期のロードマップの優先順位を決める" },
+      "description": {
+        "en": "Balance feature requests, technical debt and an upcoming regulatory deadline.",
+        "ja": "機能要望、技術的負債、そして迫る法規制対応のバランスを取る。"
+      },
+      "outcomes": {
+        "human": {
+          "result": "done",
+          "comment": {
+            "en": "A good discussion led by Aiko. The team owns the plan, though they had no time to analyze the 1,200 app reviews behind the feature requests.",
+            "ja": "愛子の進行で良い議論ができ、チーム全員が納得した計画になった。ただし、機能要望の背景にある1,200件のアプリレビューを分析する時間はなかった。"
+          }
+        },
+        "human_ai": {
+          "result": "perfect",
+          "comment": {
+            "en": "The team drafted the priorities, then asked the AI to challenge them using the review data. It surfaced a top complaint they had underestimated. The team adjusted the plan and fully owns it.",
+            "ja": "チームが優先順位案を作り、AIにレビューデータを使って反論させた。過小評価していた不満の上位項目が浮かび上がり、計画を修正。チームが自信を持って説明できる計画になった。"
+          }
+        },
+        "ai_human": {
+          "result": "minor",
+          "comment": {
+            "en": "The AI proposed a roadmap built around the most-requested features. The team approved it quickly — and only later noticed it scheduled the mandatory regulatory update too late. Replanning cost a day.",
+            "ja": "AIが要望数の多い機能を優先したロードマップを提案し、チームはすぐに承認。後になって、必須の法規制対応が間に合わない順序になっていると気づき、計画のやり直しに1日かかった。"
+          }
+        },
+        "ai": {
+          "result": "incident",
+          "comment": {
+            "en": "The AI set the roadmap alone. It ignored the regulatory deadline (which was not in its data), and nobody on the team could explain the priorities to stakeholders. Trust in the plan collapsed.",
+            "ja": "AIが単独でロードマップを決定。データに含まれていなかった法規制の期限を無視し、チームの誰も優先順位の理由を関係者に説明できなかった。計画への信頼が崩れた。"
+          }
+        }
+      }
+    },
+    {
+      "id": "meeting-notes",
+      "owner": "priya",
+      "title": { "en": "Write the sprint meeting notes", "ja": "スプリント会議の議事録を作成" },
+      "description": {
+        "en": "Summarize the decisions and action items from three recorded meetings.",
+        "ja": "録画された3つの会議の決定事項とアクションアイテムをまとめる。"
+      },
+      "outcomes": {
+        "human": {
+          "result": "minor",
+          "comment": {
+            "en": "Priya spent three hours on the notes and missed two action items. Nobody followed up on them.",
+            "ja": "プリヤが3時間かけて議事録を作ったが、アクションアイテムを2つ書き漏らし、誰もフォローしなかった。"
+          }
+        },
+        "human_ai": {
+          "result": "done",
+          "comment": {
+            "en": "Priya wrote the notes and the AI checked them against the recordings, adding the missing action items. Accurate, but it still took time.",
+            "ja": "プリヤが議事録を書き、AIが録画と照合して漏れていたアクションアイテムを追加。正確だが、時間はかかった。"
+          }
+        },
+        "ai_human": {
+          "result": "perfect",
+          "comment": {
+            "en": "The AI produced notes from the recordings in minutes; Priya skimmed them and fixed one owner name. Fast and accurate.",
+            "ja": "AIが録画から数分で議事録を作成し、プリヤがざっと確認して担当者名を1か所修正。速くて正確。"
+          }
+        },
+        "ai": {
+          "result": "done",
+          "comment": {
+            "en": "The AI's notes were good and shared instantly. One action item went to the wrong person, but it was noticed at the next stand-up. Low risk, low effort.",
+            "ja": "AIの議事録は質が高く、すぐに共有された。アクションアイテムの担当者が1件間違っていたが、翌日の朝会で気づけた。リスクも手間も小さい。"
+          }
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,290 @@
+{
+  "id": "b2b-growth",
+  "icon": "📈",
+  "title": {
+    "en": "B2B Sales & Marketing Team",
+    "ja": "B2B営業・マーケティングチーム"
+  },
+  "description": {
+    "en": "A growth team selling a cloud expense-management platform to mid-size companies: a pipeline of deals to close and campaigns to launch.",
+    "ja": "中堅企業向けにクラウド経費精算システムを販売するグロースチーム。商談パイプラインのクロージングとキャンペーンの立ち上げを担う。"
+  },
+  "members": [
+    {
+      "id": "rina",
+      "avatar": "👩‍💼",
+      "name": { "en": "Rina Kobayashi", "ja": "小林 里奈" },
+      "role": { "en": "Product Owner & Head of Growth", "ja": "プロダクトオーナー兼グロース責任者" },
+      "strengths": {
+        "en": ["Strategy and brand voice", "Knows the market inside out"],
+        "ja": ["戦略とブランドの声", "市場を熟知"]
+      }
+    },
+    {
+      "id": "daniel",
+      "avatar": "🤝",
+      "name": { "en": "Daniel Park", "ja": "ダニエル・パク" },
+      "role": { "en": "Account executive", "ja": "営業担当" },
+      "strengths": {
+        "en": ["Builds client trust", "Tough negotiator"],
+        "ja": ["顧客の信頼を築く", "交渉に強い"]
+      }
+    },
+    {
+      "id": "emi",
+      "avatar": "✍️",
+      "name": { "en": "Emi Watanabe", "ja": "渡辺 恵美" },
+      "role": { "en": "Content marketer", "ja": "コンテンツマーケター" },
+      "strengths": {
+        "en": ["Storytelling", "SEO know-how"],
+        "ja": ["ストーリーテリング", "SEOの知識"]
+      }
+    },
+    {
+      "id": "omar",
+      "avatar": "📊",
+      "name": { "en": "Omar Haddad", "ja": "オマール・ハダッド" },
+      "role": { "en": "Sales ops & data analyst", "ja": "セールスオペレーション兼データアナリスト" },
+      "strengths": {
+        "en": ["CRM and dashboards", "Spots trends in data"],
+        "ja": ["CRMとダッシュボード", "データからトレンドを発見"]
+      }
+    }
+  ],
+  "tasks": [
+    {
+      "id": "outreach",
+      "owner": "daniel",
+      "title": { "en": "Personalized emails to 200 prospects", "ja": "見込み客200社へのパーソナライズしたメール" },
+      "description": {
+        "en": "Each email should mention the prospect's business and a relevant use case.",
+        "ja": "各メールで相手企業の事業と関連する活用例に触れる必要がある。"
+      },
+      "outcomes": {
+        "human": {
+          "result": "minor",
+          "comment": {
+            "en": "Daniel wrote great emails — but only 40 of them. 160 prospects heard nothing this week, and two of them signed up for a competitor's webinar.",
+            "ja": "ダニエルは素晴らしいメールを書いたが、送れたのは40通だけ。160社には今週何も届かず、うち2社は競合のウェビナーに申し込んだ。"
+          }
+        },
+        "human_ai": {
+          "result": "done",
+          "comment": {
+            "en": "Daniel drafted each email and the AI tightened the wording. Quality was high, but he only reached 80 prospects.",
+            "ja": "ダニエルが各メールを下書きし、AIが文章を磨いた。品質は高いが、届けられたのは80社。"
+          }
+        },
+        "ai_human": {
+          "result": "perfect",
+          "comment": {
+            "en": "The AI drafted all 200 emails from CRM data. Daniel personally reviewed the top 30 accounts and spot-checked the rest, fixing a few awkward details. 14 meetings booked.",
+            "ja": "AIがCRMデータから200通すべてを下書き。ダニエルが重要顧客30社を自ら確認し、残りも抜き取りでチェックして細部を修正。14件の商談が決まった。"
+          }
+        },
+        "ai": {
+          "result": "incident",
+          "comment": {
+            "en": "The AI sent 200 emails on its own. A data mismatch meant 23 emails used the wrong company name, and one thanked a prospect for being 'a long-time client' of a competitor. A screenshot went viral on LinkedIn.",
+            "ja": "AIが200通を自動送信。データの不整合で23通の社名が間違っており、ある1通では見込み客を競合の「長年のお客様」として感謝していた。そのスクリーンショットがLinkedInで拡散された。"
+          }
+        }
+      }
+    },
+    {
+      "id": "renewal",
+      "owner": "daniel",
+      "title": { "en": "Negotiate the renewal with our biggest client", "ja": "最大顧客との契約更新交渉" },
+      "description": {
+        "en": "The client is asking for a discount and considering a competitor.",
+        "ja": "顧客は値引きを求め、競合への乗り換えも検討している。"
+      },
+      "outcomes": {
+        "human": {
+          "result": "done",
+          "comment": {
+            "en": "Daniel negotiated on relationship and trust, and secured the renewal. He was caught off guard once by usage data the client brought up, but recovered.",
+            "ja": "ダニエルは関係性と信頼をもとに交渉し、更新を勝ち取った。顧客が持ち出した利用データに一度不意を突かれたが、うまく切り返した。"
+          }
+        },
+        "human_ai": {
+          "result": "perfect",
+          "comment": {
+            "en": "Daniel prepared his strategy; the AI reviewed it, role-played tough objections, and pulled usage data to support his case. Renewal signed, with a 3-year commitment.",
+            "ja": "ダニエルが戦略を立て、AIがそれをレビューして厳しい反論のロールプレイ相手になり、主張を裏付ける利用データも集めた。3年契約で更新が決まった。"
+          }
+        },
+        "ai_human": {
+          "result": "minor",
+          "comment": {
+            "en": "The AI drafted the proposal and Daniel approved it quickly. It offered a discount beyond company policy; Rina caught it before signature, but the client noticed the back-and-forth and found the whole process impersonal.",
+            "ja": "AIが提案書を作成し、ダニエルがすぐに承認。社内規定を超える割引が含まれており、署名前に里奈が気づいたが、やり直しのやり取りで顧客は事務的な対応だと感じた。"
+          }
+        },
+        "ai": {
+          "result": "incident",
+          "comment": {
+            "en": "An AI agent handled the negotiation by email. To 'maximize the chance of renewal', it agreed to a 25% discount and unlimited users. The contract is renewed — at a loss.",
+            "ja": "AIエージェントがメールで交渉を担当。「更新の確率を最大化する」ため、25%の値引きとユーザー数無制限に合意してしまった。契約は更新されたが、赤字に。"
+          }
+        }
+      }
+    },
+    {
+      "id": "blog",
+      "owner": "emi",
+      "title": { "en": "Write a 4-article blog series", "ja": "ブログ記事4本の連載を書く" },
+      "description": {
+        "en": "Thought-leadership articles on expense-management trends, to attract new leads.",
+        "ja": "新規リード獲得のための、経費管理のトレンドに関するソートリーダーシップ記事。"
+      },
+      "outcomes": {
+        "human": {
+          "result": "minor",
+          "comment": {
+            "en": "Emi wrote one excellent article. The other three slipped to next month, and the campaign launch was delayed.",
+            "ja": "恵美は素晴らしい記事を1本書いたが、残り3本は来月にずれ込み、キャンペーン開始が遅れた。"
+          }
+        },
+        "human_ai": {
+          "result": "perfect",
+          "comment": {
+            "en": "Emi wrote in her own voice, with real customer stories; the AI suggested SEO improvements and tightened the text. All four were published, with strong engagement.",
+            "ja": "恵美が自分の言葉と実際の顧客事例で執筆し、AIがSEOの改善と文章の引き締めを提案。4本すべてが公開され、反響も大きかった。"
+          }
+        },
+        "ai_human": {
+          "result": "done",
+          "comment": {
+            "en": "The AI drafted all four and Emi edited them. They are fine but sound generic — like every competitor's blog. Emi had to rewrite the introductions to give them any personality.",
+            "ja": "AIが4本すべてを下書きし、恵美が編集。問題はないが、どの競合のブログとも似た無難な内容に。個性を出すため、恵美は導入部分を書き直す必要があった。"
+          }
+        },
+        "ai": {
+          "result": "minor",
+          "comment": {
+            "en": "The AI published four articles. Engagement was low, and one cited a 'Gartner study' with a statistic nobody could find. Emi quietly removed it after a reader asked for the source.",
+            "ja": "AIが4本の記事を公開。反響は小さく、1本には誰も出典を見つけられない「ガートナーの調査」の統計が引用されていた。読者から出典を尋ねられ、恵美がこっそり削除した。"
+          }
+        }
+      }
+    },
+    {
+      "id": "pipeline-report",
+      "owner": "omar",
+      "title": { "en": "Update the weekly sales dashboard", "ja": "週次の営業ダッシュボードを更新" },
+      "description": {
+        "en": "Pull CRM data, calculate the sales forecast and share it with leadership.",
+        "ja": "CRMからデータを抽出し、売上予測を計算して経営陣に共有する。"
+      },
+      "outcomes": {
+        "human": {
+          "result": "minor",
+          "comment": {
+            "en": "Omar built the report by hand in a spreadsheet. A copy-paste error inflated the forecast by ¥12M, and leadership made a hiring decision based on it.",
+            "ja": "オマールがスプレッドシートで手作業でレポートを作成。コピペミスで売上予測が1,200万円過大になり、経営陣はそれをもとに採用の判断をしてしまった。"
+          }
+        },
+        "human_ai": {
+          "result": "done",
+          "comment": {
+            "en": "Omar built the report; the AI double-checked the formulas and caught a copy-paste error. Accurate, but it took most of his Monday.",
+            "ja": "オマールがレポートを作成し、AIが数式を再チェックしてコピペミスを発見。正確だが、月曜日のほとんどが潰れた。"
+          }
+        },
+        "ai_human": {
+          "result": "done",
+          "comment": {
+            "en": "The AI generated the dashboard and Omar approved it. Accurate — though approving the same automated report every week added little value.",
+            "ja": "AIがダッシュボードを生成し、オマールが承認。正確だが、同じ自動レポートを毎週承認することにあまり価値はなかった。"
+          }
+        },
+        "ai": {
+          "result": "perfect",
+          "comment": {
+            "en": "The AI refreshed the dashboard automatically from the CRM, using the same tested formulas every week. Omar used the time saved to investigate why deals stall at the demo stage.",
+            "ja": "AIがCRMから自動でダッシュボードを更新。毎週同じ検証済みの数式で計算される。オマールは浮いた時間で、商談がデモ段階で停滞する原因を分析した。"
+          }
+        }
+      }
+    },
+    {
+      "id": "campaign-strategy",
+      "owner": "rina",
+      "title": { "en": "Define the next campaign strategy", "ja": "次のキャンペーン戦略を決める" },
+      "description": {
+        "en": "Target customers, key message and budget split for the next big campaign.",
+        "ja": "次の大型キャンペーンのターゲット、主要メッセージ、予算配分を決める。"
+      },
+      "outcomes": {
+        "human": {
+          "result": "done",
+          "comment": {
+            "en": "Rina led a workshop and the team agreed on a sharp message. A good strategy, though based more on gut feeling than on data.",
+            "ja": "里奈がワークショップを主導し、チームは鋭いメッセージで合意。良い戦略だが、データよりも勘に基づいていた。"
+          }
+        },
+        "human_ai": {
+          "result": "perfect",
+          "comment": {
+            "en": "The team drafted the strategy, then asked the AI to analyze won and lost deals and to play a skeptical CFO. It revealed that mid-size manufacturers convert twice as well. The team refocused — and can explain every decision.",
+            "ja": "チームが戦略案を作り、AIに受注・失注データの分析と懐疑的なCFO役を依頼。中堅製造業の成約率が2倍高いことが判明した。チームは焦点を絞り直し、すべての判断を自分たちの言葉で説明できる。"
+          }
+        },
+        "ai_human": {
+          "result": "minor",
+          "comment": {
+            "en": "The AI's strategy was polished and the team approved it. It turned out to be nearly identical to two competitors' positioning. The campaign launched, but nobody notices it.",
+            "ja": "AIの戦略は完成度が高く、チームは承認。しかし競合2社のポジショニングとほぼ同じだった。キャンペーンは始まったが、埋もれてしまっている。"
+          }
+        },
+        "ai": {
+          "result": "incident",
+          "comment": {
+            "en": "The AI set the strategy and budget on its own. It targeted the biggest group by volume — students and freelancers who do not need the product. Half the quarter's budget went to leads that will never buy.",
+            "ja": "AIが戦略と予算を単独で決定。数が最も多い層 — 製品を必要としない学生やフリーランス — を狙ってしまった。四半期予算の半分が、決して買わないリードに費やされた。"
+          }
+        }
+      }
+    },
+    {
+      "id": "ad-variants",
+      "owner": "emi",
+      "title": { "en": "Create ad copy for A/B testing", "ja": "A/Bテスト用の広告コピーを作成" },
+      "description": {
+        "en": "Short headlines and texts for LinkedIn and search ads.",
+        "ja": "LinkedInと検索広告用の短い見出しと本文。"
+      },
+      "outcomes": {
+        "human": {
+          "result": "done",
+          "comment": {
+            "en": "Emi wrote 4 solid variants. The test ran, but with so few options the winner only improved clicks by 5%.",
+            "ja": "恵美が堅実な案を4つ作成。テストは実施できたが、選択肢が少なく、勝った案のクリック率改善は5%にとどまった。"
+          }
+        },
+        "human_ai": {
+          "result": "done",
+          "comment": {
+            "en": "Emi wrote 6 variants and the AI polished them. Good quality, modest volume: clicks improved by 9%.",
+            "ja": "恵美が6案を作り、AIが磨きをかけた。品質は良いが量は控えめで、クリック率の改善は9%。"
+          }
+        },
+        "ai_human": {
+          "result": "perfect",
+          "comment": {
+            "en": "The AI generated 30 variants; Emi filtered out the off-brand ones and kept 12. The winning headline improved clicks by 38%.",
+            "ja": "AIが30案を生成し、恵美がブランドに合わないものを除いて12案に絞った。勝った見出しはクリック率を38%改善した。"
+          }
+        },
+        "ai": {
+          "result": "minor",
+          "comment": {
+            "en": "The AI generated and launched 30 variants. One promised 'free forever', which is not true. It ran for two days before the team noticed and pulled it.",
+            "ja": "AIが30案を生成して配信まで実施。うち1案は「永久無料」という事実と異なる約束をしていた。チームが気づいて停止するまで2日間配信された。"
+          }
+        }
+      }
+    }
+  ]
+}

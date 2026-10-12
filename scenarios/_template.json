@@ -1,0 +1,43 @@
+{
+  "id": "my-team",
+  "icon": "🚀",
+  "title": { "en": "Team name", "ja": "チーム名" },
+  "description": { "en": "One or two sentences about the team and what matters in its work.", "ja": "チームの説明と、仕事で大切なこと。" },
+  "members": [
+    {
+      "id": "member1",
+      "avatar": "🙂",
+      "name": { "en": "First Last", "ja": "姓 名" },
+      "role": { "en": "Product Owner", "ja": "プロダクトオーナー" },
+      "strengths": { "en": ["Strength 1", "Strength 2"], "ja": ["強み1", "強み2"] }
+    },
+    {
+      "id": "member2",
+      "avatar": "🙂",
+      "name": { "en": "First Last", "ja": "姓 名" },
+      "role": { "en": "Role", "ja": "役割" },
+      "strengths": { "en": ["Strength 1", "Strength 2"], "ja": ["強み1", "強み2"] }
+    },
+    {
+      "id": "member3",
+      "avatar": "🙂",
+      "name": { "en": "First Last", "ja": "姓 名" },
+      "role": { "en": "Role", "ja": "役割" },
+      "strengths": { "en": ["Strength 1", "Strength 2"], "ja": ["強み1", "強み2"] }
+    }
+  ],
+  "tasks": [
+    {
+      "id": "task-1",
+      "owner": "member1",
+      "title": { "en": "Task title", "ja": "タスク名" },
+      "description": { "en": "Short context for the task.", "ja": "タスクの簡単な説明。" },
+      "outcomes": {
+        "human": { "result": "done", "comment": { "en": "What happened with people alone.", "ja": "人だけで行った場合の結果。" } },
+        "human_ai": { "result": "perfect", "comment": { "en": "What happened when people drafted and AI reviewed.", "ja": "人が作成しAIがレビューした場合の結果。" } },
+        "ai_human": { "result": "minor", "comment": { "en": "What happened when AI drafted and a person approved.", "ja": "AIが作成し人が承認した場合の結果。" } },
+        "ai": { "result": "incident", "comment": { "en": "What happened with AI alone.", "ja": "AIだけで行った場合の結果。" } }
+      }
+    }
+  ]
+}

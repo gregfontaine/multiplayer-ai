@@ -1,0 +1,290 @@
+{
+  "id": "people-team",
+  "icon": "🧑‍🤝‍🧑",
+  "title": {
+    "en": "HR & People Team",
+    "ja": "人事・ピープルチーム"
+  },
+  "description": {
+    "en": "The people team of a 600-employee company: hiring, onboarding and employee wellbeing — where fairness and confidentiality come first.",
+    "ja": "従業員600人の企業の人事チーム。採用・オンボーディング・従業員のウェルビーイングを担い、公平性と機密保持が最優先。"
+  },
+  "members": [
+    {
+      "id": "yoko",
+      "avatar": "👩‍⚖️",
+      "name": { "en": "Yoko Fujita", "ja": "藤田 陽子" },
+      "role": { "en": "Product Owner & HR manager", "ja": "プロダクトオーナー兼人事マネージャー" },
+      "strengths": {
+        "en": ["Labor law expertise", "Trusted by employees"],
+        "ja": ["労働法の専門知識", "従業員からの厚い信頼"]
+      }
+    },
+    {
+      "id": "marco",
+      "avatar": "🔎",
+      "name": { "en": "Marco Rossi", "ja": "マルコ・ロッシ" },
+      "role": { "en": "Recruiter", "ja": "採用担当" },
+      "strengths": {
+        "en": ["Reads people well", "Great candidate experience"],
+        "ja": ["人を見る目がある", "候補者体験づくりが得意"]
+      }
+    },
+    {
+      "id": "ayumi",
+      "avatar": "🎓",
+      "name": { "en": "Ayumi Kato", "ja": "加藤 あゆみ" },
+      "role": { "en": "Learning & development specialist", "ja": "人材育成担当" },
+      "strengths": {
+        "en": ["Designs engaging training", "Facilitation"],
+        "ja": ["魅力的な研修の設計", "ファシリテーション"]
+      }
+    },
+    {
+      "id": "ben",
+      "avatar": "📉",
+      "name": { "en": "Ben Carter", "ja": "ベン・カーター" },
+      "role": { "en": "People analytics", "ja": "ピープルアナリティクス担当" },
+      "strengths": {
+        "en": ["Surveys and statistics", "Careful with private data"],
+        "ja": ["サーベイと統計", "個人データの扱いに慎重"]
+      }
+    }
+  ],
+  "tasks": [
+    {
+      "id": "screening",
+      "owner": "marco",
+      "title": { "en": "Screen 300 job applications", "ja": "応募書類300件のスクリーニング" },
+      "description": {
+        "en": "Shortlist candidates for 3 engineering positions.",
+        "ja": "エンジニア職3ポジションの候補者を絞り込む。"
+      },
+      "outcomes": {
+        "human": {
+          "result": "minor",
+          "comment": {
+            "en": "Marco screened all 300 in a rush. Late-evening reviews were noticeably harsher, and two strong candidates were rejected by mistake.",
+            "ja": "マルコが300件を急いで審査。夜遅くの審査は明らかに厳しくなり、優秀な候補者2人を誤って不合格にしてしまった。"
+          }
+        },
+        "human_ai": {
+          "result": "perfect",
+          "comment": {
+            "en": "Marco screened, and the AI reviewed his decisions for consistency with the job criteria. It flagged 9 borderline rejections; Marco took a second look and recovered two great candidates.",
+            "ja": "マルコが審査し、AIが職務要件に照らして判断の一貫性をレビュー。不合格の境界線上にある9件を指摘し、マルコが再確認して優秀な候補者2人を救い出した。"
+          }
+        },
+        "ai_human": {
+          "result": "minor",
+          "comment": {
+            "en": "The AI ranked all candidates and Marco approved the shortlist. Later he noticed the AI systematically ranked people with career gaps (often parents returning to work) lower. The list had to be redone.",
+            "ja": "AIが全候補者をランク付けし、マルコが候補リストを承認。後になって、AIがキャリアの空白期間がある人（多くは育児からの復職者）を体系的に低く評価していることに気づき、リストを作り直すことになった。"
+          }
+        },
+        "ai": {
+          "result": "incident",
+          "comment": {
+            "en": "The AI screened and automatically rejected 240 applicants, penalizing career gaps and certain universities. A rejected candidate asked for an explanation nobody could give, and the case reached Legal.",
+            "ja": "AIが審査し、240人を自動で不合格にした。キャリアの空白や特定の大学を不利に扱っていた。不合格となった候補者から理由の説明を求められたが誰も答えられず、法務部の案件になった。"
+          }
+        }
+      }
+    },
+    {
+      "id": "harassment",
+      "owner": "yoko",
+      "title": { "en": "Respond to a harassment report", "ja": "ハラスメントの相談に対応する" },
+      "description": {
+        "en": "An employee reported a sensitive situation and is waiting for a response.",
+        "ja": "従業員から深刻な相談があり、返答を待っている。"
+      },
+      "outcomes": {
+        "human": {
+          "result": "perfect",
+          "comment": {
+            "en": "Yoko met the employee in person, listened, and explained the next steps clearly. The employee felt heard and safe. Some work needs a human, fully.",
+            "ja": "陽子が直接面談して話を聴き、今後の流れを丁寧に説明した。従業員は話を聞いてもらえた、安心できたと感じた。人が全面的に担うべき仕事もある。"
+          }
+        },
+        "human_ai": {
+          "result": "done",
+          "comment": {
+            "en": "Yoko wrote the response and used the company-approved AI to check it against policy. Respectful and correct — though the extra step added little here.",
+            "ja": "陽子が返信を書き、社内で承認されたAIで規定との整合性を確認。丁寧で正確だが、この場面では追加のステップはあまり意味がなかった。"
+          }
+        },
+        "ai_human": {
+          "result": "minor",
+          "comment": {
+            "en": "The AI drafted a reply and Yoko approved it after a quick read. It was correct but sounded like a template. The employee felt they were being 'processed', and trust took a hit.",
+            "ja": "AIが返信を下書きし、陽子がざっと読んで承認。内容は正しかったが定型文のように聞こえ、従業員は「事務的に処理された」と感じ、信頼が損なわれた。"
+          }
+        },
+        "ai": {
+          "result": "incident",
+          "comment": {
+            "en": "An AI assistant replied automatically with a link to the policy and asked the employee to 'fill in the form'. The employee escalated to the labor union. Confidential details had also been logged in a shared ticket system.",
+            "ja": "AIアシスタントが規定へのリンクを自動返信し、「フォームに記入してください」と依頼。従業員は労働組合に相談した。さらに、機密情報が共有のチケットシステムに記録されていた。"
+          }
+        }
+      }
+    },
+    {
+      "id": "onboarding",
+      "owner": "ayumi",
+      "title": { "en": "Create onboarding training for new hires", "ja": "新入社員向けオンボーディング研修を作る" },
+      "description": {
+        "en": "Slides, quizzes and a welcome guide for 20 people starting next month.",
+        "ja": "来月入社する20人向けのスライド、クイズ、ウェルカムガイド。"
+      },
+      "outcomes": {
+        "human": {
+          "result": "minor",
+          "comment": {
+            "en": "Ayumi built beautiful slides, but the quizzes and welcome guide were not ready in time. New hires got a half-finished program.",
+            "ja": "あゆみは見事なスライドを作ったが、クイズとウェルカムガイドが間に合わず、新入社員には未完成のプログラムが提供された。"
+          }
+        },
+        "human_ai": {
+          "result": "done",
+          "comment": {
+            "en": "Ayumi created the content and the AI reviewed it for clarity and suggested quiz questions. Good work, finished just in time.",
+            "ja": "あゆみがコンテンツを作り、AIが分かりやすさをレビューしてクイズ問題を提案。良い出来で、ぎりぎり間に合った。"
+          }
+        },
+        "ai_human": {
+          "result": "perfect",
+          "comment": {
+            "en": "The AI drafted slides, quizzes and the guide from internal policies. Ayumi checked every policy statement, fixed an outdated remote-work rule, and added real stories from employees. Complete and engaging.",
+            "ja": "AIが社内規定をもとにスライド・クイズ・ガイドを下書き。あゆみが規定に関する記述をすべて確認し、古いリモートワーク規定を修正、社員の実体験エピソードも加えた。完成度が高く、魅力的な研修になった。"
+          }
+        },
+        "ai": {
+          "result": "minor",
+          "comment": {
+            "en": "The AI produced a complete program, but it included last year's remote-work rule. Three new hires planned their commute based on wrong information.",
+            "ja": "AIがプログラム一式を作成したが、昨年のリモートワーク規定が含まれていた。新入社員3人が誤った情報をもとに通勤の計画を立ててしまった。"
+          }
+        }
+      }
+    },
+    {
+      "id": "survey",
+      "owner": "ben",
+      "title": { "en": "Analyze the engagement survey", "ja": "エンゲージメントサーベイの分析" },
+      "description": {
+        "en": "2,000 anonymous free-text comments to summarize for leadership.",
+        "ja": "経営陣向けに、匿名の自由記述コメント2,000件を要約する。"
+      },
+      "outcomes": {
+        "human": {
+          "result": "minor",
+          "comment": {
+            "en": "Ben could only read a sample of 300 comments. He missed a growing concern about workload in the support department.",
+            "ja": "ベンが読めたのは2,000件中300件のサンプルのみ。サポート部門で広がっていた業務負荷への懸念を見落とした。"
+          }
+        },
+        "human_ai": {
+          "result": "done",
+          "comment": {
+            "en": "Ben categorized the comments and the AI checked his categories for gaps. Accurate, but it took two full weeks.",
+            "ja": "ベンがコメントを分類し、AIがテーマ分類の漏れをチェック。正確だが、丸2週間かかった。"
+          }
+        },
+        "ai_human": {
+          "result": "perfect",
+          "comment": {
+            "en": "The AI grouped all 2,000 comments into themes. Ben verified the quotes, checked the statistics, and removed any comment that could identify someone in a small team. Fast, accurate and anonymous.",
+            "ja": "AIが2,000件すべてをテーマ別に分類。ベンが引用と統計を検証し、小規模チームの個人を特定できそうなコメントを除外した。速く、正確で、匿名性も守られた。"
+          }
+        },
+        "ai": {
+          "result": "incident",
+          "comment": {
+            "en": "The AI's summary was sharp — but it quoted a comment from a 3-person team that made the author obvious. Leadership read it, and the employee's anonymity was broken.",
+            "ja": "AIの要約は的確だったが、3人チームからのコメントをそのまま引用しており、書いた人が明らかだった。経営陣がそれを読み、従業員の匿名性が失われた。"
+          }
+        }
+      }
+    },
+    {
+      "id": "employee-questions",
+      "owner": "yoko",
+      "title": { "en": "Answer routine employee questions", "ja": "従業員からの定型的な質問に答える" },
+      "description": {
+        "en": "About 150 questions a week on paid leave, expenses and benefits.",
+        "ja": "有給休暇、経費、福利厚生などに関する週約150件の質問。"
+      },
+      "outcomes": {
+        "human": {
+          "result": "minor",
+          "comment": {
+            "en": "The team answered by hand. Replies took up to 4 days, and there was no time left for strategic work.",
+            "ja": "チームが手作業で回答。返信に最大4日かかり、戦略的な仕事に割く時間がなくなった。"
+          }
+        },
+        "human_ai": {
+          "result": "done",
+          "comment": {
+            "en": "The team wrote answers and the AI checked them against policy. Accurate, but still slow.",
+            "ja": "チームが回答を書き、AIが規定と照合。正確だが、まだ遅い。"
+          }
+        },
+        "ai_human": {
+          "result": "done",
+          "comment": {
+            "en": "The AI drafted answers and a team member approved each one. Accurate and faster — but approving 150 simple answers a week was tedious.",
+            "ja": "AIが回答を下書きし、担当者が1件ずつ承認。正確で速くなったが、週150件の簡単な回答を承認するのは退屈な作業だった。"
+          }
+        },
+        "ai": {
+          "result": "perfect",
+          "comment": {
+            "en": "An AI assistant based on the official policy documents answered instantly, and handed anything sensitive or unclear over to a person. Employees loved it, and the team got its time back.",
+            "ja": "公式の規定文書に基づくAIアシスタントが即座に回答し、デリケートな内容や不明確な質問は人に引き継いだ。従業員に好評で、チームは時間を取り戻せた。"
+          }
+        }
+      }
+    },
+    {
+      "id": "ratings",
+      "owner": "yoko",
+      "title": { "en": "Calibrate year-end performance ratings", "ja": "年度末の人事評価のキャリブレーション" },
+      "description": {
+        "en": "Make ratings fair and consistent across 12 managers.",
+        "ja": "12人のマネージャー間で評価を公平かつ一貫したものにする。"
+      },
+      "outcomes": {
+        "human": {
+          "result": "done",
+          "comment": {
+            "en": "The managers calibrated in a long meeting. Decisions were fair, though some differences in rating habits between departments went unnoticed.",
+            "ja": "マネージャーたちが長時間の会議でキャリブレーションを実施。判断は公正だったが、部門間の評価のばらつきの一部は見過ごされた。"
+          }
+        },
+        "human_ai": {
+          "result": "perfect",
+          "comment": {
+            "en": "Managers proposed ratings and the AI analyzed them for patterns: one department consistently rated part-time staff lower. The managers discussed it and corrected it. Fair, and fully owned by people.",
+            "ja": "マネージャーが評価案を出し、AIが傾向を分析。ある部門がパートタイム社員を一貫して低く評価していることが分かった。マネージャーが議論して修正。公平で、判断の責任は人が持っている。"
+          }
+        },
+        "ai_human": {
+          "result": "minor",
+          "comment": {
+            "en": "The AI suggested ratings from performance data and managers mostly approved them. Several anchored on the AI's number instead of their own judgment, and employees questioned how their rating was decided.",
+            "ja": "AIが業績データから評価案を出し、マネージャーはほぼそのまま承認。何人かは自分の判断ではなくAIの数字に引きずられ、社員から評価の決め方について疑問の声が上がった。"
+          }
+        },
+        "ai": {
+          "result": "incident",
+          "comment": {
+            "en": "The AI assigned the ratings directly. When employees asked why, no manager could explain the ratings of their own team. HR had to redo the whole process, and trust dropped sharply.",
+            "ja": "AIが評価を直接決定。社員に理由を聞かれても、どのマネージャーも自分のチームの評価を説明できなかった。人事は全プロセスをやり直すことになり、信頼は大きく低下した。"
+          }
+        }
+      }
+    }
+  ]
+}
